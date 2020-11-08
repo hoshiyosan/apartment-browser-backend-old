@@ -18,7 +18,7 @@ class JSONEncoder(json.JSONEncoder):
 
 
 def jsonify(data):
-    return flask_jsonify(JSONEncoder().encode(data))
+    return JSONEncoder().encode(data), 200, {'Content-Type': 'application/json'}
 
 
 bp = Blueprint('bookmarks', __name__)
