@@ -1,0 +1,7 @@
+__pycache__/
+*.egg-info
+build/
+analysis.py
+pyproject.toml
+.env.local
+preview*
